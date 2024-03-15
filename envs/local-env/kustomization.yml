@@ -12,4 +12,5 @@ resources:
 patches:
 - path: storage-class.yaml
 - path: indexer-resources.yaml
-- path: wazuh-resources.yaml
+- path: wazuh-manager-worker.yaml
+- path: wazuh-manager-master.yaml

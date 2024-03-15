@@ -12,3 +12,14 @@ metadata:
   namespace: wazuh
 spec:
   replicas: 1
+  volumeClaimTemplates:
+    - metadata:
+        name: wazuh-manager-worker
+        namespace: wazuh
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        storageClassName: standard
+        resources:
+          requests:
+            storage: 500Mi
